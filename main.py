@@ -37,7 +37,7 @@ def valadd(question, adrem, index, valtype):
             val = float(input(question))
             valuelist.append(val)
 
-          if index != None:
+        else:
             if valtype == "str" or valtype == None:
               val = input(question)
               valuelist.insert(index, val)
@@ -59,6 +59,6 @@ def valadd(question, adrem, index, valtype):
       except:
         print("err invalid value")
         
-valadd("please enter a value to put in the array: ", "add", None, None)
+valadd("please enter a value to put in the array: ", "add", 1, None)
 valcheck()
 print(valuelist)
